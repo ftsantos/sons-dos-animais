@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Som dos Animais</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/bateria.png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+
+    <h1>Som dos Animais</h1>
+    <h2>Imagens e sons extraídos do Google</h2>
+    
+    <br/>
+    <div id="page1" class="page active">
+        <section class="teclado">        
+            <a href="#" class="tecla african-grey-parrot"><img src="images/african-grey-parrot.png"></a>
+            <a href="#" class="tecla alligator"><img src="images/alligator.png"></a>
+            <a href="#" class="tecla alpaca"><img src="images/alpaca.png"></a>
+            <a href="#" class="tecla anteater"><img src="images/anteater.png"></a>
+        
+            <a href="#" class="tecla ape"><img src="images/ape.png"></a>
+            <a href="#" class="tecla bat"><img src="images/bat.png"></a>
+            <a href="#" class="tecla bee"><img src="images/bee.png"></a>
+            <a href="#" class="tecla bowhead-whale"><img src="images/bowhead-whale.png"></a>
+
+            <a href="#" class="tecla buffalo"><img src="images/buffalo.png"></a>
+            <a href="#" class="tecla butterfly"><img src="images/butterfly.png"></a>
+            <a href="#" class="tecla camel"><img src="images/camel.png"></a>
+            <a href="#" class="tecla cat"><img src="images/cat.png"></a>
+
+            <a href="#" class="tecla chicken"><img src="images/chicken.png"></a>
+            <a href="#" class="tecla cow"><img src="images/cow.png"></a>
+            <a href="#" class="tecla crow"><img src="images/crow.png"></a>
+            <a href="#" class="tecla dinosaur"><img src="images/dinosaur.png"></a>
+        </section>
+    </div>
+    <div id="page2" class="page">
+        <section class="teclado">
+            <a href="#" class="tecla dog"><img src="images/dog.png"></a>
+            <a href="#" class="tecla duck"><img src="images/duck.png"></a>
+            <a href="#" class="tecla elephant"><img src="images/elephant.png"></a>
+            <a href="#" class="tecla anteater"><img src="images/anteater.png"></a>
+        
+            <a href="#" class="tecla ape"><img src="images/ape.png"></a>
+            <a href="#" class="tecla bat"><img src="images/bat.png"></a>
+            <a href="#" class="tecla bee"><img src="images/bee.png"></a>
+            <a href="#" class="tecla bowhead-whale"><img src="images/bowhead-whale.png"></a>
+
+            <a href="#" class="tecla buffalo"><img src="images/buffalo.png"></a>
+            <a href="#" class="tecla butterfly"><img src="images/butterfly.png"></a>
+            <a href="#" class="tecla camel"><img src="images/camel.png"></a>
+            <a href="#" class="tecla cat"><img src="images/cat.png"></a>
+
+            <a href="#" class="tecla chicken"><img src="images/chicken.png"></a>
+            <a href="#" class="tecla cow"><img src="images/cow.png"></a>
+            <a href="#" class="tecla crow"><img src="images/crow.png"></a>
+            <a href="#" class="tecla dinosaur"><img src="images/dinosaur.png"></a>
+        </section>
+    </div>
+    <div id="page3" class="page">
+        <section class="teclado">
+            <a href="#" class="tecla otter"><img src="images/otter.png"></a>
+            <a href="#" class="tecla owl"><img src="images/owl.png"></a>
+            <a href="#" class="tecla panda"><img src="images/panda.png"></a>
+            <a href="#" class="tecla penguin"><img src="images/penguin.png"></a>
+        
+            <a href="#" class="tecla ape"><img src="images/ape.png"></a>
+            <a href="#" class="tecla bat"><img src="images/bat.png"></a>
+            <a href="#" class="tecla bee"><img src="images/bee.png"></a>
+            <a href="#" class="tecla bowhead-whale"><img src="images/bowhead-whale.png"></a>
+
+            <a href="#" class="tecla buffalo"><img src="images/buffalo.png"></a>
+            <a href="#" class="tecla butterfly"><img src="images/butterfly.png"></a>
+            <a href="#" class="tecla camel"><img src="images/camel.png"></a>
+            <a href="#" class="tecla cat"><img src="images/cat.png"></a>
+
+            <a href="#" class="tecla chicken"><img src="images/chicken.png"></a>
+            <a href="#" class="tecla cow"><img src="images/cow.png"></a>
+            <a href="#" class="tecla crow"><img src="images/crow.png"></a>
+            <a href="#" class="tecla dinosaur"><img src="images/dinosaur.png"></a>
+        </section>
+    </div>
+    
+
+    <br/>
+
+    <section class="">
+        <button onclick="showPage(1)" class="button-pagina">Página 1</button>
+    <button onclick="showPage(2)" class="button-pagina">Página 2</button>
+    <button onclick="showPage(3)" class="button-pagina">Página 3</button>
+    </section>
+
+    <audio src="sounds/african-grey-parrot.mp3" id="som_african-grey-parrot"></audio>
+    <audio src="sounds/alligator.mp3" id="som_alligator"></audio>
+    <audio src="sounds/alpaca.mp3" id="som_alpaca"></audio>
+    <audio src="sounds/anteater.mp3" id="som_anteater"></audio>
+
+    <audio src="sounds/ape.mp3" id="som_ape"></audio>
+    <audio src="sounds/bat.mp3" id="som_bat"></audio>
+    <audio src="sounds/bee.mp3" id="som_bee"></audio>
+    <audio src="sounds/bowhead-whale.mp3" id="som_bowhead-whale"></audio>
+
+    <audio src="sounds/buffalo.mp3" id="som_buffalo"></audio>
+    <audio src="sounds/butterfly.mp3" id="som_butterfly"></audio>
+    <audio src="sounds/camel.mp3" id="som_camel"></audio>
+    <audio src="sounds/cat.mp3" id="som_cat"></audio>
+
+    <audio src="sounds/chicken.mp3" id="som_chicken"></audio>
+    <audio src="sounds/cow.mp3" id="som_cow"></audio>
+    <audio src="sounds/crow.mp3" id="som_crow"></audio>
+    <audio src="sounds/dinosaur.mp3" id="som_dinosaur"></audio>
+
+    
+    <audio src="sounds/dog.mp3" id="som_dog"></audio>
+    <audio src="sounds/duck.mp3" id="som_duck"></audio>
+    <audio src="sounds/elephant.mp3" id="som_elephant"></audio>
+    <audio src="sounds/elephant.mp3" id="som_elephant"></audio>
+
+    <audio src="sounds/otter.mp3" id="som_otter"></audio>
+    <audio src="sounds/owl.mp3" id="som_owl"></audio>
+    <audio src="sounds/panda.mp3" id="som_panda"></audio>
+    <audio src="sounds/penguin.mp3" id="som_penguin"></audio>
+    
+   
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
