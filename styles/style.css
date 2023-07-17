@@ -99,4 +99,8 @@ a{
 }
 */
 
-
+@media screen and (max-width: 1200px){
+  .teclado {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
