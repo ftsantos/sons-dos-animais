@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paginação com JavaScript</title>
+  <style>
+    .page {
+      display: none;
+    }
+    .page.active {
+      display: block;
+    }
+  </style>
+  <script>
+    function showPage(pageNumber) {
+      var pages = document.getElementsByClassName('page');
+      for (var i = 0; i < pages.length; i++) {
+        pages[i].classList.remove('active');
+      }
+      document.getElementById('page' + pageNumber).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+  <h1>Paginação com JavaScript</h1>
+
+  <button onclick="showPage(1)">Página 1</button>
+  <button onclick="showPage(2)">Página 2</button>
+  <button onclick="showPage(3)">Página 3</button>
+
+  <section>
+    <div id="page1" class="page active">
+      <h2>Página 1</h2>
+      <p>Conteúdo da página 1</p>
+    </div>
+    <div id="page2" class="page">
+      <h2>Página 2</h2>
+      <p>Conteúdo da página 2</p>
+    </div>
+    <div id="page3" class="page">
+      <h2>Página 3</h2>
+      <p>Conteúdo da página 3</p>
+    </div>
+  </section>
+</body>
+</html>
