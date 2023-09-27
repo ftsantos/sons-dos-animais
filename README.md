@@ -8,9 +8,9 @@ Sons dos Animais
 ## Features
 [//]: # (Add the features of your project here:)
 
-- ⚛️ **JavaScript**
-- ⚛️ **HTML** 
-- 💹 **CSS** 
+- **JavaScript**
+- **HTML** 
+- **CSS** 
 
 ## Getting started
 
